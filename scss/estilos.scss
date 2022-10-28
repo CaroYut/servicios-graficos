@@ -1,29 +1,4 @@
-* {
-    margin: 0px;
-        padding: 0px;
-}
-
 /*Inicio*/
-header{
-    background-color: yellowgreen;
-    background-size: cover;
-    padding: 10px;
-    margin: 5px;
-}
-h1{
-    font-family: 'Montserrat', sans-serif;
-    color:darkmagenta
-}
-
-p{font-family: 'PT Serif', serif;
-    color: brown;
-}
-
-.menu{
-    text-align: right;
-    padding: 30px 50px 0 0;  
-}
-
 li {
     display: inline-block;
     width: 10%;
@@ -35,49 +10,16 @@ li {
     text-decoration: none;
         }
     }
-body {
-    background-image: url("https://p0.pxfuel.com/preview/497/372/964/texture-watercolor-painting-color.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-section {
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-}
-
-aside {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: crimson;
-    padding: 20px;
-    margin: 25px;
-}
-/*servicios*/
-.imagenServ {
-    display: flex;
-    justify-content: center;
-}
-
 /*Contacto*/
-
-.section2 {
-    display: grid;
-    grid-template-columns: 10px 10px;
-    grid-template-rows: auto;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
-}
-form {
-width: 450px;
-height: 400px;
-margin: auto;
-background: rgba(0, 0,0, 0.4);
-padding: 10px 20px;
-box-sizing: border-box;
-margin-top: 20px;
-border-radius: 7px;
+.contacto2{
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: $color_fuente;
+    background-color: transparent;
 }
 
 h2 {
@@ -86,24 +28,6 @@ h2 {
     font-size: 20px;
     margin: 0;
     margin-bottom: 20px;
-}
-
-input,textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-}
-
-.contacto2{
-    width: 450px;
-    height: 400px;
-    margin: auto;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    color: white;
-    background-color: transparent;
 }
 
 .ul2 {
@@ -123,14 +47,12 @@ input,textarea {
 }
 
 
-
 .foto1 {
     background-image: url(../img/disenografico1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: $anchoFotos;
     height: $altoFotos;    
-
 }
 
 .foto2 {
@@ -156,36 +78,9 @@ input,textarea {
     height: $altoFotos;    
 }
 
-h4 {
-    color: black;
-    font-size:xx-large;
+h3 {
+    color: $color_fuente;
     display: flex;
     justify-content: center;
-    margin: 50px;
-    padding: 30px;
-}
-
-h3 {
-color: $color_fuente;
-display: flex;
-justify-content: center;
-flex-wrap: nowrap;
-}
-
-.pTres {
-background-color: whitesmoke;
-font-size: 25px;
-color:deeppink;
-display: flex;
-justify-content: center;
-}
-
-.carousel10 {
-    margin: 15px;
-    padding: 15px;
-}
-
-h5 {
-    color: black;
-    background-color: white;
-}
+    flex-wrap: nowrap;
+    }
