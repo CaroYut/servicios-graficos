@@ -159,7 +159,7 @@ input,textarea {
 
 h4 {
     color: black;
-    font-size:xx-large
+    font-size:xx-large;
     display: flex;
     justify-content: center;
     margin: 50px;
