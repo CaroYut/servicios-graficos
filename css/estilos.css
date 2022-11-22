@@ -1,15 +1,24 @@
 * {
     margin: 0px;
-        padding: 0px;
+    padding: 0px;
 }
 
-/*Inicio*/
+
+/* inicio */
+
+.header2 {
+    padding: 5px;
+    margin: 5px;
+    height: 10%;
+}
+
 header{
     background-color: yellowgreen;
     background-size: cover;
     padding: 10px;
     margin: 5px;
 }
+
 h1{
     font-family: 'Montserrat', sans-serif;
     color:darkmagenta
@@ -22,7 +31,7 @@ p{font-family: 'PT Serif', serif;
 .menu{
     text-align: right;
     padding: 30px 50px 0 0;  
-}
+} 
 
 body {
     background-image: url("https://p0.pxfuel.com/preview/497/372/964/texture-watercolor-painting-color.jpg");
@@ -42,6 +51,19 @@ aside {
     padding: 20px;
     margin: 25px;
 }
+
+li {
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    font-size: 15px;
+    padding: 5px; 
+  } 
+li a  {
+    color: white;
+    text-decoration: none;
+    } 
+
 /*servicios*/
 .imagenServ {
     display: flex;
@@ -69,6 +91,24 @@ margin-top: 20px;
 border-radius: 7px;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.contacto2{
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: transparent;
+}
 
 
 input,textarea {
@@ -78,6 +118,61 @@ input,textarea {
     box-sizing: border-box;
 }
 
+.ul2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:flex-start;
+    color: white;
+    }    
+    .ul2 li {
+         display: flex;
+        flex-direction: row;
+              }
+
+
+.pDos {
+    color: white;
+}
+
+
+.foto1 {
+    background-image: url(../img/jp2.0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 200px;    
+}
+
+.foto2 {
+    background-image: url(../img/folletos2.0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 200px;    
+}
+
+.foto3 {
+    background-image: url(../img/tarjetas2.0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 200px;    
+}
+.foto4 {
+    background-image: url(../img/carteleriacollage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 200px;    
+}
+
+h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    }
 
 
 h4 {
@@ -92,14 +187,81 @@ h4 {
 
 
 .pTres {
+font-family: 'Dancing Script', cursive;
 background-color: whitesmoke;
-font-size: 25px;
-color:deeppink;
+padding: 2%;
+margin: 5%;
+font-size: 50px;
+color: darkgreen;
 display: flex;
-justify-content: center;
-}
+justify-content:center;
+    }
 
 .carousel10 {
     margin: 15px;
     padding: 15px;
 }
+
+.pCuatro {
+    padding: 15px;
+    margin: 50px;
+    color: red;
+    background-color: beige;
+}
+
+.imprentafoto {
+    display: flex;
+    justify-content: center;
+margin: 50px;
+padding: 20px;
+}
+
+.nosotrostitulo {
+    margin: 5px;
+    padding: 5px;
+}
+
+/*
+@media (min-width: 576px) { 
+    li {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        position: absolute;
+        font-size: 2px;
+        padding: 5px; 
+      } 
+ }
+
+
+@media (min-width: 768px) { 
+    li {
+        display: inline-block;
+        width: 10%;
+        position: relative;
+        font-size: 15px;
+        padding: 5px; 
+      } 
+ }
+
+@media (min-width: 992px) { 
+    li {
+        display: inline-block;
+        width: 10%;
+        position: absolute;
+        font-size: 15px;
+        padding: 5px; 
+      } 
+ }
+
+
+@media (min-width: 1200px) {
+    li {
+        display: inline-block;
+        width: 10%;
+        position: absolute;
+        font-size: 15px;
+        padding: 5px; 
+      } 
+ }
+ */
