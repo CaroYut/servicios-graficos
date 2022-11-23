@@ -2,16 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-
-
-/* inicio */
-
-.header2 {
-    padding: 5px;
-    margin: 5px;
-    height: 10%;
-}
-
+/*inicio*/
 header{
     background-color: yellowgreen;
     background-size: cover;
@@ -27,11 +18,6 @@ h1{
 p{font-family: 'PT Serif', serif;
     color: brown;
 }
-
-.menu{
-    text-align: right;
-    padding: 30px 50px 0 0;  
-} 
 
 body {
     background-image: url("https://p0.pxfuel.com/preview/497/372/964/texture-watercolor-painting-color.jpg");
@@ -52,17 +38,13 @@ aside {
     margin: 25px;
 }
 
-li {
+ .li2 {
     display: inline-block;
     width: 10%;
     position: relative;
     font-size: 15px;
     padding: 5px; 
   } 
-li a  {
-    color: white;
-    text-decoration: none;
-    } 
 
 /*servicios*/
 .imagenServ {
@@ -80,7 +62,8 @@ li a  {
     padding: 10px;
     margin: 10px;
 }
-form {
+
+.form1 {
 width: 450px;
 height: 400px;
 margin: auto;
@@ -128,44 +111,31 @@ input,textarea {
     .ul2 li {
          display: flex;
         flex-direction: row;
-              }
-
+             }
 
 .pDos {
     color: white;
 }
 
-
-.foto1 {
-    background-image: url(../img/jp2.0.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.imagen {
+    width: 100%;
+    }
+    
+.imagen img {
     width: 500px;
-    height: 200px;    
+    height: 200px;
 }
-
-.foto2 {
-    background-image: url(../img/folletos2.0.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 200px;    
-}
-
-.foto3 {
-    background-image: url(../img/tarjetas2.0.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 200px;    
-}
-.foto4 {
-    background-image: url(../img/carteleriacollage.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 200px;    
-}
+   
+ .galeria {
+   width: 70%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat (2, 1fr);
+   column-gap: .5rem;
+   row-gap: .5rem;
+   }
+   
+   
 
 h3 {
     color: white;
@@ -221,47 +191,26 @@ padding: 20px;
     padding: 5px;
 }
 
-/*
-@media (min-width: 576px) { 
-    li {
-        display: flex;
-        justify-content: center;
-        width: 10%;
-        position: absolute;
-        font-size: 2px;
-        padding: 5px; 
-      } 
+@media (min-width:100px){
+    .galeria {
+    grid-template-columns: repeat(1,1fr);
+    }
+ }
+@media (min-width:520px){
+    .galeria {
+    grid-template-columns: repeat(1,1fr);
+    }
+ }
+    
+@media (min-width:728px){
+    .galeria {
+    grid-template-columns: repeat(2,1fr);
+    }
+ }
+    
+@media (min-width:1024px){
+    .galeria {
+    grid-template-columns: repeat(2,1fr);
+    }
  }
 
-
-@media (min-width: 768px) { 
-    li {
-        display: inline-block;
-        width: 10%;
-        position: relative;
-        font-size: 15px;
-        padding: 5px; 
-      } 
- }
-
-@media (min-width: 992px) { 
-    li {
-        display: inline-block;
-        width: 10%;
-        position: absolute;
-        font-size: 15px;
-        padding: 5px; 
-      } 
- }
-
-
-@media (min-width: 1200px) {
-    li {
-        display: inline-block;
-        width: 10%;
-        position: absolute;
-        font-size: 15px;
-        padding: 5px; 
-      } 
- }
- */
