@@ -26,10 +26,10 @@
                   <a class="nav-link active text-white" aria-current="page" href="index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="servicios.html">SERVICIOS</a>
+                  <a class="nav-link text-white" href="productos.html">PRODUCTOS</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link text-white" href="trabajos.html"> TRABAJOS</a>
+                  <a class="nav-link text-white" href="carrito.html"> CARRITO</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="contacto.html">CONTACTO</a>
@@ -42,47 +42,61 @@
           </div>
         </nav>
       </header>
-  
-       <section>
-        <h2> ALGUNOS DE NUESTROS TRABAJOS</h2>
-       </section>
 
-        <div id="carouselExampleInterval" class="carousel slide carousel10" data-bs-ride="carousel">
-          <div class="carousel-inner carousel10">
-            <div class="carousel-item active" data-bs-interval="1000">
-              <img src="img/autoadhesivos2.0.jpeg" class="d-block w-10" alt="disenografico">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/lapapa.jpeg" class="d-block w-100" alt="llavero">
-            </div>
-            <div class="carousel-item">
-              <img src="img/nelson.jpeg" class="d-block w-100" alt="folleto wachitas">
-            </div>
-            <div class="carousel-item">
-              <img src="img/dieno.jpeg" class=d-block w-100 alt="folleto uniforme">
-            </div>
-            <div class="carousel-item">
-              <img src="img/mariana.jpeg" class= d-block w-100 alt="folleto mariana">
-            </div>
-            <div class="carousel-item">
-              <img src="img/wonderhambur.jpeg" class= d-block w-100 alt="folleto wonder">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>   
-       
+<div class="envoltorio">
+  <aside>
+      <header>
+        <h1 class="logo"> J.Publicidad </h1>
+      </header>
+          <nav>
+        <ul>
+            <li>
+              <a class= "boton-menu boton-volver" href="./productos.html"> <i class="bi bi-cart"></i> Seguir comprando</a>
+             </li>
+            <li>
+              <a class= "boton-menu boton-carrito active" href="./carrito.html"> <i class="bi bi-cart"></i> Carrito </a>
+            </li>
+        </ul>
+          </nav>
+     <footer>
+        <p class= "texto-footer"> @ Carolina Yut copyright </p>
+      </footer>
+  </aside>	
+  <main>
+      <h2 class="titulo-principal">Carrito</h2>
+    <div class="contenedor-carrito">
+        <p id= "carrito-vacio"class="carrito-vacio"> Tu carrito esta vacio :(	 </p>
+          <div id="carrito-productos" class="carrito-productos disabled">         
+          </div>    
+             <div id="carrito-acciones" class="carrito-acciones disabled">
+               <div class="carrito-acciones-izquierda">
+                 <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito </button>  
+               </div>
+                <div class="carrito-acciones-derecha">
+                   <div class="carrito-acciones-total">
+                     <p> Total: </p>
+                     <p id= "total"> $100 </p>
+                   </div>
+                    <button id="carrito-acciones-comprar" class= "carrito-acciones-comprar"> Comprar ahora </button>
+                </div>
+             </div>
+        <p id="carrito-comprado" class="carrito-comprado disabled"> Muchas gracias por tu compra :) </p>
+    </div>
+  </main>
+  
+
+
+
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-      </body>
+
+ <script src="./js/carrito.js"></script>
+ <script src="./js/index.js"></script>
+
+</body>
     </html>
     
 
 
 
 
+    
