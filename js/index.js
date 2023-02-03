@@ -1,16 +1,17 @@
-let productos = [];
- 
+let productos = []; 
+
 fetch ("./js/productos.json")
- .then (responde => response.json()) 
+ .then (response => response.json()) 
  .then (data => {
   productos = data;
   cargarProductos (productos);
-  })     
+  })    
+
     
    const contenedorProductos = document.querySelector ("#contenedor-productos");
    const botonesCategorias = document.querySelectorAll (".boton-categoria");
    const tituloPrincipal = document.querySelector ("#titulo-principal");
-   let botonesAgregar = document.querySelector (".producto-agregar")
+   let botonesAgregar = document.querySelector (".producto-agregar");
    const numerito = document.querySelector ("#numerito");
     
     
@@ -33,9 +34,11 @@ fetch ("./js/productos.json")
       contenedorProductos.append (div);
       })
       
+
+    }
+    
        actualizarBotonesAgregar ();
     
-     }
      
      function agregarAlCarrito (e) {
       
@@ -63,9 +66,9 @@ fetch ("./js/productos.json")
       cargarProductos (productos);
       
      botonesCategorias.forEach (boton => {
-     boton.addEventListener ("click", (e) => {      
-     botonesCategorias.forEach (boton => boton.classList.remove ("active"));
-     e.currentTarget.classList.add ("active");
+      boton.addEventListener ("click", (e) => {      
+       botonesCategorias.forEach (boton => boton.classList.remove ("active"));
+        e.currentTarget.classList.add ("active");
       
       
       if (e.currentTargent.id != "todos") {
@@ -99,6 +102,8 @@ if (productosEnCarritoLS) {
   } else {
   productosEnCarrito = [];
   }
+
+
 
 
 
