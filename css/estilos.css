@@ -214,17 +214,6 @@ padding: 20px;
     }
  }
 
-
-
- 
- 
- 
- 
- 
- 
- 
- 
-    
     ul {
         list-style-type: none;
     }
@@ -232,6 +221,7 @@ padding: 20px;
     a {
         text-decoration: none;
     }
+
     .envoltorio {
         box-sizing: border-box;
         display: grid;
