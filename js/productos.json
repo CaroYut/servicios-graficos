@@ -3,7 +3,7 @@
     {
         "id": 1,
         "titulo": "Folleto",
-        "imagen": "./img/favicon.jpeg",
+        "imagen":"./img/favicon.jpeg",
         "categoria": {
             "nombre": "Papeleria",
             "id": "papeleria"
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "titulo": "Tarjeta",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Papeleria",
             "id": "papeleria"
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "titulo": "Cartel",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Carteleria",
             "id": "carteleria"
@@ -37,7 +37,7 @@
     {
         "id": 4,
         "titulo": "Diseño Personalizado",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Otros",
             "id": "otros"
@@ -48,7 +48,7 @@
     {
         "id": 5,
         "titulo": "Imanes",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Otros",
             "id": "otros"
@@ -59,7 +59,7 @@
     {
         "id": 6,
         "titulo": "Vinilo",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Carteleria",
             "id": "carteleria"
@@ -70,7 +70,7 @@
     {
         "id": 7,
         "titulo": "Banner",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Carteleria",
             "id": "carteleria"
@@ -81,7 +81,7 @@
     {
         "id": 8,
         "titulo": "Almanaque",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Papeleria",
             "id": "papeleria"
@@ -92,7 +92,7 @@
     {
         "id": 9,
         "titulo": "Lona",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Carteleria",
             "id": "carteleria"
@@ -103,7 +103,7 @@
     {
         "id": 10,
         "titulo": "Calendario",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Papeleria",
             "id": "papeleria"
@@ -114,7 +114,7 @@
     {
         "id": 11,
         "titulo": "Toldos",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Carteleria",
             "id": "carteleria"
@@ -125,7 +125,7 @@
     {
         "id": 12,
         "titulo": "Vales de Envase",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Papeleria",
             "id": "papeleria"
@@ -136,7 +136,7 @@
     {
         "id": 13,
         "titulo": "Delantales",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Serigrafia",
             "id": "serigrafia"
@@ -147,7 +147,7 @@
     {
         "id": 14,
         "titulo": "Gorra",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Serigrafia",
             "id": "serigrafia"
@@ -158,7 +158,7 @@
     {
         "id": 15,
         "titulo": "Remeras",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Serigrafia",
             "id": "serigrafia"
@@ -169,7 +169,7 @@
     {
         "id": 16,
         "titulo": "Etiquetas",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Serigrafia",
             "id": "serigrafia"
@@ -180,7 +180,7 @@
     {
         "id": 17,
         "titulo": "Bolsas",
-        "imagen": "",
+        "imagen": "./img/favicon.jpeg",
         "categoria": {
             "nombre": "Serigrafia",
             "id": "serigrafia"

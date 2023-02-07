@@ -16,7 +16,7 @@ h1{
 }
 
 p{font-family: 'PT Serif', serif;
-    color: brown;
+    color: red;
 }
 
 body {
@@ -138,7 +138,7 @@ input,textarea {
    
 
 h3 {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -380,6 +380,7 @@ padding: 20px;
     .producto-agregar:hover {
         background-color: var(--clr-main);
         color: var(--clr-white);
+
     }
     
     
