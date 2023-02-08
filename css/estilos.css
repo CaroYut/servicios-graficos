@@ -19,7 +19,7 @@ p{font-family: 'PT Serif', serif;
     color: red;
 }
 
-body {
+.cuerpo {
     background-image: url("https://p0.pxfuel.com/preview/497/372/964/texture-watercolor-painting-color.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -484,3 +484,63 @@ padding: 20px;
     }
     
     
+	.switch {
+	
+        background-color: darkblue;
+        display: flex;
+        position:Relative;
+        cursor: pinter;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        }
+        
+        
+        
+        .switch span {
+        width: 30px;
+        height:30px;
+        line-height: 30px;
+        display: block;
+        color: white;
+        background: none;
+        }
+        
+        .switch::after {
+        
+        display: block;
+        background: white;
+        width: 1.8rem;
+        height: 1.8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 50%;
+        transition: all .5s ease;
+        box-shadow: 0 0 1.5px 1.5px rgba (0, 0, 0, .5);
+        content: "";
+        
+        }
+        
+        .switch.active {
+        background: gold;
+        
+        }
+    
+    .switch.active::after  {
+    left: unset;
+    right: 0;
+    }
+    
+   body {
+    background: white;
+    color: black;
+    }
+    
+    body.dark {
+    background: #222;
+    color: white;
+    }       
