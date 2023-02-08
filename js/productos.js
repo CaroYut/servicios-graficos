@@ -1,11 +1,15 @@
 let productos = []; 
 
+const productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+
+
 fetch("./js/productos.json")
  .then (response => response.json()) 
  .then (data => {
   productos = data;
   cargarProductos (productos);
   })    
+
 
     
    const contenedorProductos = document.querySelector ("#contenedor-productos");
@@ -15,6 +19,13 @@ fetch("./js/productos.json")
    const numerito = document.querySelector ("#numerito");
     
     
+function actualizarNumerito () {
+  let nuevoNumerito = productosEnCarrito.reduce ((acc,producto) => 
+  acc + producto.cantidad, 0);
+  numerito.innerText = nuevoNumerito;
+
+}
+actualizarNumerito ();
 
 botonesCategorias.forEach(boton => boton.addEventListener ("click",() => {
   aside.classList.remove("aside-visible");
@@ -74,71 +85,48 @@ botonesCategorias.forEach(boton => boton.addEventListener ("click",() => {
     }
 
  /*CARRITO*/
+
+ 
  
     function agregarAlCarrito (e) {
-const idBoton = e.currentTarget.id;
-const productoAgregado = productos.find (producto => producto.id === idBoton);
 
-if (productosEnCarrito.some (producto => producto.id === idBoton)) {
- productosEnCarrito.findIndex (producto => producto.id === idBoton);
+      Toastify({
+        text: "PRODUCTO AGREGADO",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right,#00b09b, #96c93d )",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
+const idBoton = parseInt(e.currentTarget.id);
+const productoAgregado = productos.find (producto => producto.id === idBoton);
+const productoAlCarrito = {...productoAgregado, cantidad: 1}
+const existe = productosEnCarrito.some ((producto) => producto.id === idBoton)
+
+if (existe) {
+ const index = productosEnCarrito.findIndex ((producto) => producto.id === idBoton);
 productosEnCarrito[index].cantidad++;
 } else {
- /* productoAgregado.cantidad = 1; */
-  productosEnCarrito.push (productoAgregado);
+
+  productosEnCarrito.push (productoAlCarrito);
 }
 actualizarNumerito ();
-console.log(agregarAlCarrito)
+console.log(productosEnCarrito);
 localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
 }
-function actualizarNumerito () {
-  let nuevoNumerito = productosEnCarrito.reduce ((acc,producto) => acc + producto.cantidad, 0);
-  numerito.innerText = nuevoNumerito;
-
-}
-
-
-  
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let productosEnCarrito;
-
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-
-/*const productosEnCarritoLS = JSON.parse (localStorage.getItem("productos-en-carrito")); */
-
-if (productosEnCarritoLS) {
-
-  productosEnCarrito = JSON.parse(productosEnCarritoLS);
-
-  /* productosEnCarrito = productosEnCarritoLS; */
-   actualizarNumerito();
-  } else {
-  productosEnCarrito = [];
-  }
 
 
 
